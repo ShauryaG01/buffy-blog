@@ -1,11 +1,6 @@
 {
   "launch_date": "2026-07-13",
   "queue": [
-    "frase-review.html",
-    "profound-vs-peec-vs-otterly.html",
-    "surfer-seo-review.html",
-    "writesonic-review.html",
-    "best-ai-seo-tools.html",
     "profound-alternatives.html",
     "buffy-intel-vs-profound.html",
     "athena-ai-review.html",
@@ -61,5 +56,11 @@
     "doofinder-vs-searchspring.html",
     "algolia-vs-findify.html"
   ],
-  "published": []
+  "published": [
+    "frase-review.html",
+    "profound-vs-peec-vs-otterly.html",
+    "surfer-seo-review.html",
+    "writesonic-review.html",
+    "best-ai-seo-tools.html"
+  ]
 }
