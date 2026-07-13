@@ -1,10 +1,6 @@
 {
   "launch_date": "2026-07-13",
   "queue": [
-    "klevu-alternatives.html",
-    "buffy-search-vs-klevu.html",
-    "algolia-shopify.html",
-    "searchanise-alternatives.html",
     "writesonic-alternatives.html",
     "semrush-ai-alternatives.html",
     "fast-simon-review.html",
@@ -61,6 +57,10 @@
     "klevu-vs-searchanise.html",
     "surfer-seo-pricing.html",
     "best-shopify-apps.html",
-    "doofinder-alternatives.html"
+    "doofinder-alternatives.html",
+    "klevu-alternatives.html",
+    "buffy-search-vs-klevu.html",
+    "algolia-shopify.html",
+    "searchanise-alternatives.html"
   ]
 }
