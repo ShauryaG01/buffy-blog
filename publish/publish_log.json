@@ -24,5 +24,17 @@
     "daily_budget": 30,
     "live_total": 10,
     "remaining": 49
+  },
+  {
+    "ts": "2026-07-13T18:03:57.691988+00:00",
+    "published": [
+      "/blog/klevu-vs-searchanise.html",
+      "/blog/surfer-seo-pricing.html",
+      "/blog/best-shopify-apps.html",
+      "/blog/doofinder-alternatives.html"
+    ],
+    "daily_budget": 30,
+    "live_total": 14,
+    "remaining": 45
   }
 ]
