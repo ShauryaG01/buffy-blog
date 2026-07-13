@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>How Buffy Measures AI Brand Recommendations: Methodology | Buffy</title>
+  <meta name="description" content="AI assistants like ChatGPT, Claude, Gemini, and Perplexity now answer questions like &#34;best sustainable sneaker brand&#34; or &#34;top skincare for sensitive skin&#34;…">
+  <link rel="canonical" href="https://heybuffy.com/blog/methodology.html">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#F4EFE3">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='20' r='8' fill='%2314143A'/%3E%3Ccircle cx='6' cy='10' r='3' fill='%2314143A'/%3E%3Ccircle cx='13' cy='6' r='3' fill='%2314143A'/%3E%3Ccircle cx='21' cy='6' r='3' fill='%2314143A'/%3E%3Ccircle cx='27' cy='11' r='3' fill='%2314143A'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="/static/css/main.css?v=6">
+  
+  <meta property="og:site_name" content="Buffy">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How Buffy Measures AI Brand Recommendations: Methodology | Buffy">
+  <meta property="og:description" content="AI assistants like ChatGPT, Claude, Gemini, and Perplexity now answer questions like &#34;best sustainable sneaker brand&#34; or &#34;top skincare for sensitive skin&#34;…">
+  <meta property="og:url" content="https://heybuffy.com/blog/methodology.html">
+  
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How Buffy Measures AI Brand Recommendations: Methodology | Buffy">
+  <meta name="twitter:description" content="AI assistants like ChatGPT, Claude, Gemini, and Perplexity now answer questions like &#34;best sustainable sneaker brand&#34; or &#34;top skincare for sensitive skin&#34;…">
+  
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://heybuffy.com/"}, {"@type": "ListItem", "position": 2, "name": "Playbook", "item": "https://heybuffy.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "How Buffy Measures AI Brand Recommendations: Methodology", "item": "https://heybuffy.com/blog/methodology.html"}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "name": "How Buffy Measures AI Brand Recommendations: Methodology", "headline": "How Buffy Measures AI Brand Recommendations: Methodology", "description": "Models queried, prompt sampling, refresh cadence, aggregation rules - and what we deliberately do not publish.", "@id": "https://heybuffy.com/blog/methodology.html", "url": "https://heybuffy.com/blog/methodology.html", "@graph": [{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How often do AI models change their brand recommendations?", "acceptedAnswer": {"@type": "Answer", "text": "It varies by model and category. Fast-moving categories (beauty, apparel, gadgets) can shift week to week as new content gets indexed or a model's retrieval layer picks up recent reviews. Slower categories (mattresses, appliances) tend to move on a monthly cycle tied to underlying model updates rather than daily volatility. This is why a one-time check is unreliable - you need a fixed refresh cadence, not a single snapshot, to tell real movement from normal run-to-run noise."}}, {"@type": "Question", "name": "Which AI models actually get checked for brand mentions?", "acceptedAnswer": {"@type": "Answer", "text": "The core set that matters for consumer purchase research is ChatGPT, Claude, Gemini, Perplexity, and Copilot, since these have the highest usage for \"what should I buy\" style questions. Regional or vertical assistants get added when usage data justifies it - for example, assistants with strong adoption among professional buyers in specific markets like India. Treating all models as equivalent is a mistake; each has different retrieval behavior and training data recency, so a brand can be strong in one and invisible in another."}}, {"@type": "Question", "name": "What's the difference between AI visibility and SEO ranking?", "acceptedAnswer": {"@type": "Answer", "text": "SEO ranking measures your position in a search results page for a query, tied to crawlable, indexable content and backlinks. AI visibility measures how often and how favorably a generative model names your brand in a conversational answer, which depends on training data, live retrieval sources, and how the model synthesizes multiple sources into one response. A brand can rank #1 on Google for a term and still be absent from the AI-generated answer to the same underlying question, because the model may be pulling from review sites or forums rather than your ranking page."}}, {"@type": "Question", "name": "Can brands see the exact prompts used to measure their AI visibility?", "acceptedAnswer": {"@type": "Answer", "text": "No, and this is deliberate across credible AI-visibility measurement, not just at Buffy. Publishing the exact prompt library and sampling weights would let brands optimize narrowly for the test prompts rather than for genuine visibility across the full range of ways real customers ask questions - the same reason search engines never publish their complete ranking algorithm. What is shared is the methodology category (model set, sampling approach, aggregation rules) so brands understand the mechanics without being able to game the specific inputs."}}, {"@type": "Question", "name": "Does location affect how AI models recommend brands, for example in India?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Location signals - inferred from phrasing, currency references, local retailer names, and sometimes explicit account settings - can change which brands a model surfaces, particularly for categories with strong regional players. A professional buyer in India asking about \"best productivity software\" or \"best skincare brand\" may get a materially different brand set than the same prompt run from a US context, because the model weighs regionally available options and locally indexed content differently. If you sell internationally, test prompts with market-specific phrasing rather than relying on one English-US baseline."}}], "url": "https://heybuffy.com/blog/methodology.html"}], "author": {"@type": "Organization", "name": "Buffy Intel", "jobTitle": "AI Commerce Intelligence", "url": "https://heybuffy.com/about"}, "publisher": {"@type": "Organization", "name": "Buffy", "url": "https://heybuffy.com"}, "datePublished": "2026-07-09", "dateModified": "2026-07-09"}</script>
+  
+</head>
+<body>
+  <header class="bnav" data-nav>
+    <div class="shell bnav__inner">
+      <a class="brand-lockup" href="/" aria-label="Buffy home">
+        <svg class="paw" viewBox="0 0 32 28" aria-hidden="true"><ellipse cx="16" cy="18" rx="8" ry="7"/><circle cx="6" cy="10" r="3"/><circle cx="13" cy="5" r="3"/><circle cx="21" cy="5" r="3"/><circle cx="27" cy="11" r="3"/></svg>
+        <span>buffy<span class="brand-dot">.</span></span><i>blog</i>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-menu" data-nav-toggle><span></span><span></span><span></span><b class="sr-only">Menu</b></button>
+      <nav class="bnav__menu" id="main-menu" data-nav-menu>
+        <a class="is-active" href="/">Blog</a>
+        <a href="https://heybuffy.com/search">Buffy Search</a>
+        <a href="https://heybuffy.com/intel">Buffy Intel</a>
+        <a href="/#articles">AI Visibility Index</a>
+        <a href="https://heybuffy.com/pricing">Pricing</a>
+        <a class="button button--primary" href="https://heybuffy.com/">Start for free <span>→</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="reading-progress" data-progress></div>
+  <main>
+
+
+<article class="article article--playbook">
+  <header class="article-hero shell shell--article">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Blog</a><span>/</span><span>Playbook</span></nav>
+    <div class="article-kickers"><span class="pill pill--peach">Playbook</span><span class="sticker">editorial draft</span></div>
+    <h1>How Buffy Measures AI Brand Recommendations: Methodology</h1>
+    <p class="article-dek">Models queried, prompt sampling, refresh cadence, aggregation rules - and what we deliberately do not publish.</p>
+    
+    
+    <div class="byline"><span class="byline__avatar">B</span><span><strong>Buffy Intel</strong><small>2026-07-09 · 8 min read</small></span></div>
+    
+  </header>
+
+  <div class="article-layout shell">
+    <div class="prose">
+      
+        
+        <section class="content-block" id="section-1">
+          <h2>Overview</h2>
+          <div class="content-block__body"><p>AI assistants like ChatGPT, Claude, Gemini, and Perplexity now answer questions like &quot;best sustainable sneaker brand&quot; or &quot;top skincare for sensitive skin&quot; directly - often before the person ever opens a search engine or scrolls a retailer page. For a DTC brand, that&#x27;s a new discovery layer with its own rules, and most founders have no visibility into whether they&#x27;re showing up, how often, or why a competitor keeps getting named instead. This page explains, in concrete terms, how Buffy measures AI brand recommendations: which models get queried, how prompts are sampled, how often data refreshes, and how results get aggregated into a score you can act on. It also covers what we deliberately withhold from public methodology docs - not to be opaque, but because publishing exact prompt banks and weighting logic would let brands game the measurement instead of improving the underlying signal AI models actually respond to. This matters right now because AI-assisted shopping research is growing fastest among professional buyers doing category comparisons before a purchase - a pattern showing up clearly in markets like India, where mobile-first professional consumers increasingly ask an assistant for a shortlist before checking a marketplace. If you&#x27;re a DTC brand, understanding this methodology is the first step to treating AI visibility as a channel you manage, not a black box you hope works in your favor.</p></div>
+          
+        </section>
+        
+        <section class="content-block" id="section-2">
+          <h2>What To Know</h2>
+          <div class="content-block__body"><p>Before you try to measure or influence AI brand recommendations, get three concepts straight.</p>
+<p>First, models queried. Buffy samples across the assistants people actually use for purchase research - ChatGPT, Claude, Gemini, Perplexity, and Copilot are the core set, with regional assistants added where usage data supports it. Each model has different training cutoffs, different retrieval behavior (some browse live, some don&#x27;t), and different tendencies to name specific brands versus generic categories. Treating them as interchangeable is the single biggest analytical error brands make.</p>
+<p>Second, prompt sampling. A single prompt run tells you almost nothing - model outputs vary run to run even with identical wording. Real measurement means sampling across a taxonomy: category-level prompts (&quot;best organic baby formula&quot;), intent-level prompts (&quot;where should I buy running shoes online&quot;), persona-level prompts (budget-conscious vs. premium buyer), and geo/language variants - a professional buyer in India phrasing a query differs from one in the US, and models respond differently to both phrasing and inferred location.</p>
+<p>Third, refresh cadence and aggregation. Models get updated, retrained, or fine-tuned on rolling cycles, so a snapshot from three months ago is stale. Buffy refreshes sampling on a fixed cadence rather than ad hoc, and aggregates results across dozens of runs per prompt cluster - reporting share of voice (how often you&#x27;re named versus competitors), average mention position, sentiment of the mention, and whether a citation/source link accompanied it. What we don&#x27;t publish: the exact prompt library, per-model sampling weights, and raw competitor-linked transcripts. That&#x27;s deliberate - it protects the integrity of the measurement from brands trying to reverse-engineer and manipulate specific prompts rather than genuinely earning visibility.</p></div>
+          
+        </section>
+        
+        <section class="content-block" id="section-3">
+          <h2>Step By Step</h2>
+          <div class="content-block__body"><ol><li>Build your own fixed prompt set first. Write 15-20 prompts spanning category (&quot;best [your category]&quot;), intent (&quot;where to buy,&quot; &quot;is [brand] worth it&quot;), and persona variations before you touch any tooling - this becomes your baseline.</li></ol>
+<ol><li>Query each major model logged out. Run your prompt set in ChatGPT, Claude, Gemini, and Perplexity without personalization or chat history influencing results, so you see what a new customer sees.</li></ol>
+<ol><li>Run each prompt multiple times, not once. Log at least 3-5 runs per prompt per model before drawing any conclusion - single-run variance is high enough to mislead you.</li></ol>
+<ol><li>Score four things per response: presence (were you mentioned at all), position (first-named vs. buried in a list), sentiment (neutral, positive, or qualified/negative), and citation (did it link or reference a source, and which one).</li></ol>
+<ol><li>Track the same prompts for your top 2-3 competitors in parallel. Visibility is relative - knowing you&#x27;re mentioned 30% of the time means nothing without knowing a competitor is mentioned 70% of the time on identical prompts.</li></ol>
+<ol><li>Add regional variants if you sell into markets like India, the UK, or the EU. Swap currency references, local retailer names, and phrasing a professional buyer in that market would actually use.</li></ol>
+<ol><li>Re-run the full set on a fixed cadence - monthly at minimum, weekly if you&#x27;re actively publishing content or PR meant to shift results. Ad hoc checking makes it impossible to tell signal from noise.</li></ol>
+<ol><li>Feed gaps back into your content and PR pipeline: if models cite specific review sites, editorial roundups, or your own product pages when recommending competitors, that&#x27;s your prioritized list of where to get covered or what to fix on-site. Buffy automates steps 2 through 7 continuously and layers on-site AI search so shoppers who do land on your store get accurate answers directly, but the manual version above will get you real signal even with no tooling.</li></ol></div>
+          
+        </section>
+        
+        <section class="content-block" id="section-4">
+          <h2>Common Mistakes</h2>
+          <div class="content-block__body"><p>Treating one good response as proof you&#x27;re &quot;winning.&quot; A single favorable ChatGPT answer means nothing when the same prompt run five minutes later omits you entirely. Model outputs are probabilistic, not deterministic - always work from aggregated runs, never a screenshot.</p>
+<p>Conflating &quot;mentioned&quot; with &quot;recommended.&quot; Being named third in a five-brand list, with a qualifier like &quot;though pricier than alternatives,&quot; is a different outcome than being the sole answer to &quot;what should I buy.&quot; Brands that only track binary presence miss the sentiment and position data that actually predicts conversion impact.</p>
+<p>Testing only in English, from a US context. If you sell into India or other non-US markets, a prompt phrased the way a local professional buyer would actually ask it - often shorter, more transactional, sometimes in a regional language mixed with English - can surface completely different brand sets than the US-English version of the same query. Skipping this gives you a distorted picture of your real international AI visibility.</p>
+<p>Ignoring citations and sources. When a model names a competitor, check whether it&#x27;s pulling from a specific review site, comparison article, or Reddit thread. Brands chase the AI mention directly and ignore the actual source content the model is citing - which is usually the more fixable, higher-leverage target.</p>
+<p>No fixed refresh schedule. Checking whenever you happen to think of it means you can&#x27;t distinguish a real trend (losing visibility because a competitor launched a PR push) from ordinary sampling noise. Lock a cadence and stick to it.</p>
+<p>Assuming the methodology is fully public anywhere. Any credible AI-visibility measurement withholds exact prompt banks and weighting logic for the same reason search engines don&#x27;t publish their full ranking algorithm - full transparency invites gaming, which degrades the measurement for everyone.</p></div>
+          
+        </section>
+        
+        <section class="content-block" id="section-5">
+          <h2>Faq</h2>
+          <div class="content-block__body"><div class="faq-item"><h3>How often do AI models change their brand recommendations?</h3><p>It varies by model and category. Fast-moving categories (beauty, apparel, gadgets) can shift week to week as new content gets indexed or a model&#x27;s retrieval layer picks up recent reviews. Slower categories (mattresses, appliances) tend to move on a monthly cycle tied to underlying model updates rather than daily volatility. This is why a one-time check is unreliable - you need a fixed refresh cadence, not a single snapshot, to tell real movement from normal run-to-run noise.</p></div>
+<div class="faq-item"><h3>Which AI models actually get checked for brand mentions?</h3><p>The core set that matters for consumer purchase research is ChatGPT, Claude, Gemini, Perplexity, and Copilot, since these have the highest usage for &quot;what should I buy&quot; style questions. Regional or vertical assistants get added when usage data justifies it - for example, assistants with strong adoption among professional buyers in specific markets like India. Treating all models as equivalent is a mistake; each has different retrieval behavior and training data recency, so a brand can be strong in one and invisible in another.</p></div>
+<div class="faq-item"><h3>What&#x27;s the difference between AI visibility and SEO ranking?</h3><p>SEO ranking measures your position in a search results page for a query, tied to crawlable, indexable content and backlinks. AI visibility measures how often and how favorably a generative model names your brand in a conversational answer, which depends on training data, live retrieval sources, and how the model synthesizes multiple sources into one response. A brand can rank #1 on Google for a term and still be absent from the AI-generated answer to the same underlying question, because the model may be pulling from review sites or forums rather than your ranking page.</p></div>
+<div class="faq-item"><h3>Can brands see the exact prompts used to measure their AI visibility?</h3><p>No, and this is deliberate across credible AI-visibility measurement, not just at Buffy. Publishing the exact prompt library and sampling weights would let brands optimize narrowly for the test prompts rather than for genuine visibility across the full range of ways real customers ask questions - the same reason search engines never publish their complete ranking algorithm. What is shared is the methodology category (model set, sampling approach, aggregation rules) so brands understand the mechanics without being able to game the specific inputs.</p></div>
+<div class="faq-item"><h3>Does location affect how AI models recommend brands, for example in India?</h3><p>Yes. Location signals - inferred from phrasing, currency references, local retailer names, and sometimes explicit account settings - can change which brands a model surfaces, particularly for categories with strong regional players. A professional buyer in India asking about &quot;best productivity software&quot; or &quot;best skincare brand&quot; may get a materially different brand set than the same prompt run from a US context, because the model weighs regionally available options and locally indexed content differently. If you sell internationally, test prompts with market-specific phrasing rather than relying on one English-US baseline.</p></div></div>
+          
+        </section>
+        
+      
+
+      
+      <footer class="evidence-card" aria-label="Editorial trust and data sources">
+        <section><span class="pill pill--mint">How we built this page</span><p>Buffy&#39;s editorial team developed this guide from the primary and reference sources listed below, then checked material claims for scope and freshness. Reviewed 2026-07-13.</p></section>
+        
+        <a href="https://heybuffy.com/editorial.html">Read our editorial policy →</a>
+      </footer>
+      
+    </div>
+
+    <aside class="article-side">
+      <div class="side-card">
+        <span class="eyebrow">On this page</span>
+        <nav><a href="#section-1">Overview</a><a href="#section-2">What To Know</a><a href="#section-3">Step By Step</a><a href="#section-4">Common Mistakes</a><a href="#section-5">Faq</a></nav>
+      </div>
+      
+      <a class="button button--primary side-cta" href="https://heybuffy.com/">Try Buffy free →</a><small class="side-note">free tier · no card</small>
+    </aside>
+  </div>
+
+  
+  <section class="related"><div class="shell"><h2>Keep reading</h2><div class="related-grid"><a href="/blog/frase-review.html"><span class="pill pill--sky">Field note</span><h3>Frase Review (2026): Features, Pricing, and Fit</h3><span>Read article →</span></a><a href="/blog/profound-vs-peec-vs-otterly.html"><span class="pill pill--sky">Field note</span><h3>Profound vs Peec vs Otterly: AI Visibility Tools Head-to-Head</h3><span>Read article →</span></a><a href="/blog/surfer-seo-review.html"><span class="pill pill--sky">Field note</span><h3>Surfer SEO Review (2026): Features, Pricing, and Fit</h3><span>Read article →</span></a></div></div></section>
+  
+</article>
+</main>
+
+  <footer class="bfooter">
+    <div class="shell bfooter__grid">
+      <div>
+        <a class="brand-lockup" href="/"><svg class="paw" viewBox="0 0 32 28" aria-hidden="true"><ellipse cx="16" cy="18" rx="8" ry="7"/><circle cx="6" cy="10" r="3"/><circle cx="13" cy="5" r="3"/><circle cx="21" cy="5" r="3"/><circle cx="27" cy="11" r="3"/></svg><span>buffy<span class="brand-dot">.</span></span></a>
+        <p>The AI commerce engine for consumer brands.</p>
+        <span class="sticker">occasional dog photos</span>
+      </div>
+      <div><h2>Explore</h2><a href="/">Field notes</a><a href="/#articles">All articles</a><a href="https://heybuffy.com/search">Buffy Search</a><a href="https://heybuffy.com/intel">Buffy Intel</a></div>
+      <div><h2>Company</h2><a href="/about.html">About</a><a href="/editorial.html">Editorial policy</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a></div>
+      <div class="newsletter"><h2>Notes worth fetching</h2><p>AI-commerce ideas, practical research, and the occasional Buffy update.</p><form><label class="sr-only" for="footer-email">Email</label><input id="footer-email" type="email" placeholder="you@brand.com"><button type="submit" aria-label="Subscribe">→</button></form><small>No spam. Pinky paw promise.</small></div>
+    </div>
+    <div class="shell bfooter__bottom">© 2026 Buffy. Built for brands that want to show up.</div>
+  </footer>
+  <script src="/static/js/main.js?v=6" defer></script>
+  
+</body>
+</html>

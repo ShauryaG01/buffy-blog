@@ -1,0 +1,38 @@
+# .github/workflows/drip.yml  (in the buffy-blog repo)
+# 7 uneven runs/day: release the next ramped batch of pages, ping IndexNow (Bing),
+# commit output/ + publish/. The commit's push triggers deploy.yml -> Pages.
+# No LLM / generation here — pages are generated up front and committed to staging/.
+name: Drip publish
+on:
+  schedule:
+    - cron: "13 1 * * *"    # uneven times, Flash pattern (UTC)
+    - cron: "47 4 * * *"
+    - cron: "19 7 * * *"
+    - cron: "53 10 * * *"
+    - cron: "31 13 * * *"
+    - cron: "7 16 * * *"
+    - cron: "41 20 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: drip
+  cancel-in-progress: false
+jobs:
+  drip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Release next batch (ramp-limited)
+        run: python scripts/publish_drip.py publish
+      - name: Submit newly-published URLs to IndexNow (Bing/Yandex)
+        run: python scripts/submit_indexnow.py --newly-published
+      - name: Commit live site + publish state
+        run: |
+          git config user.name "buffy-bot"
+          git config user.email "bot@heybuffy.com"
+          git add output publish
+          git diff --cached --quiet || git commit -m "drip: publish batch $(date -u +'%F %H:%M')"
+          git push

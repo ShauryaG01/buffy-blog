@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Zero-Results Searches: Finding and Fixing Ecommerce Dead Ends | Buffy</title>
+  <meta name="description" content="Every &#34;no results found&#34; on your site is a shopper who told you exactly what they wanted, and got nothing back. Unlike a bounce from a landing page, a zero…">
+  <link rel="canonical" href="https://heybuffy.com/blog/zero-results-search.html">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#F4EFE3">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='20' r='8' fill='%2314143A'/%3E%3Ccircle cx='6' cy='10' r='3' fill='%2314143A'/%3E%3Ccircle cx='13' cy='6' r='3' fill='%2314143A'/%3E%3Ccircle cx='21' cy='6' r='3' fill='%2314143A'/%3E%3Ccircle cx='27' cy='11' r='3' fill='%2314143A'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="/static/css/main.css?v=6">
+  
+  <meta property="og:site_name" content="Buffy">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Zero-Results Searches: Finding and Fixing Ecommerce Dead Ends | Buffy">
+  <meta property="og:description" content="Every &#34;no results found&#34; on your site is a shopper who told you exactly what they wanted, and got nothing back. Unlike a bounce from a landing page, a zero…">
+  <meta property="og:url" content="https://heybuffy.com/blog/zero-results-search.html">
+  
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zero-Results Searches: Finding and Fixing Ecommerce Dead Ends | Buffy">
+  <meta name="twitter:description" content="Every &#34;no results found&#34; on your site is a shopper who told you exactly what they wanted, and got nothing back. Unlike a bounce from a landing page, a zero…">
+  
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://heybuffy.com/"}, {"@type": "ListItem", "position": 2, "name": "Playbook", "item": "https://heybuffy.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Zero-Results Searches: Finding and Fixing Ecommerce Dead Ends", "item": "https://heybuffy.com/blog/zero-results-search.html"}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "name": "Zero-Results Searches: Finding and Fixing Ecommerce Dead Ends", "headline": "Zero-Results Searches: Finding and Fixing Ecommerce Dead Ends", "description": "Every zero-results search is a lost sale. How to find them, fix them, and stop them recurring.", "@id": "https://heybuffy.com/blog/zero-results-search.html", "url": "https://heybuffy.com/blog/zero-results-search.html", "@graph": [{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What exactly counts as a zero-results search on an ecommerce site?", "acceptedAnswer": {"@type": "Answer", "text": "A zero-results search is any query entered into your on-site search bar that returns no matching products - the shopper sees a \"no results found\" (or equivalent) message instead of a product grid. It's distinct from a search that returns irrelevant or very few results (\"near-zero\"), which causes similar abandonment but won't appear in a strict zero-count report, so check both."}}, {"@type": "Question", "name": "How do I find zero-results searches on my site?", "acceptedAnswer": {"@type": "Answer", "text": "Check your site search platform's analytics dashboard - Algolia, Klevu, Searchspring, Bloomreach, Constructor, Nosto, and Shopify's native search all log every query with its result count, and most have a dedicated \"zero results\" or \"no results\" report you can filter and export. If you're on a custom search implementation, you'll need to instrument logging on the search endpoint yourself, capturing the query string and result count for every request."}}, {"@type": "Question", "name": "Do zero-results searches actually hurt revenue?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, directionally: a zero-results search represents a shopper with explicit purchase intent who found nothing to buy, on a visit you typically paid to generate through SEO, ads, or email. Baymard Institute's ecommerce UX research repeatedly identifies poor site search relevance as one of the most common points of shopper abandonment. The exact revenue impact varies by brand and traffic mix, so measure it directly: track add-to-cart and conversion rates for sessions that hit a zero-results page versus sessions that don't."}}, {"@type": "Question", "name": "What's the difference between fixing zero-results with synonyms versus redirects?", "acceptedAnswer": {"@type": "Answer", "text": "Synonyms fix the search engine's understanding so any future query using that alternate term matches correctly going forward (e.g., mapping \"jumper\" to \"sweater\" catalog-wide). A redirect or curated result set fixes one specific query string to point at a specific collection or page. Use synonyms for language/vocabulary gaps that will recur in many phrasings; use redirects for specific high-volume queries where you want to control exactly what's shown."}}, {"@type": "Question", "name": "Should I add products just because shoppers are searching for them and getting zero results?", "acceptedAnswer": {"@type": "Answer", "text": "Not automatically - first confirm it's genuine net-new demand rather than a naming mismatch for something you already sell. If a query recurs consistently over weeks or months and doesn't map to an existing product under different phrasing, treat it as validated demand and route it to merchandising or buying as a low-cost signal worth evaluating against your assortment strategy."}}], "url": "https://heybuffy.com/blog/zero-results-search.html"}], "author": {"@type": "Organization", "name": "Buffy Intel", "jobTitle": "AI Commerce Intelligence", "url": "https://heybuffy.com/about"}, "publisher": {"@type": "Organization", "name": "Buffy", "url": "https://heybuffy.com"}, "datePublished": "2026-07-09", "dateModified": "2026-07-09"}</script>
+  
+</head>
+<body>
+  <header class="bnav" data-nav>
+    <div class="shell bnav__inner">
+      <a class="brand-lockup" href="/" aria-label="Buffy home">
+        <svg class="paw" viewBox="0 0 32 28" aria-hidden="true"><ellipse cx="16" cy="18" rx="8" ry="7"/><circle cx="6" cy="10" r="3"/><circle cx="13" cy="5" r="3"/><circle cx="21" cy="5" r="3"/><circle cx="27" cy="11" r="3"/></svg>
+        <span>buffy<span class="brand-dot">.</span></span><i>blog</i>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-menu" data-nav-toggle><span></span><span></span><span></span><b class="sr-only">Menu</b></button>
+      <nav class="bnav__menu" id="main-menu" data-nav-menu>
+        <a class="is-active" href="/">Blog</a>
+        <a href="https://heybuffy.com/search">Buffy Search</a>
+        <a href="https://heybuffy.com/intel">Buffy Intel</a>
+        <a href="/#articles">AI Visibility Index</a>
+        <a href="https://heybuffy.com/pricing">Pricing</a>
+        <a class="button button--primary" href="https://heybuffy.com/">Start for free <span>→</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="reading-progress" data-progress></div>
+  <main>
+
+
+<article class="article article--playbook">
+  <header class="article-hero shell shell--article">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Blog</a><span>/</span><span>Playbook</span></nav>
+    <div class="article-kickers"><span class="pill pill--peach">Playbook</span><span class="sticker">editorial draft</span></div>
+    <h1>Zero-Results Searches: Finding and Fixing Ecommerce Dead Ends</h1>
+    <p class="article-dek">Every zero-results search is a lost sale. How to find them, fix them, and stop them recurring.</p>
+    
+    
+    <div class="byline"><span class="byline__avatar">B</span><span><strong>Buffy Intel</strong><small>2026-07-09 · 7 min read</small></span></div>
+    
+  </header>
+
+  <div class="article-layout shell">
+    <div class="prose">
+      
+        
+        <section class="content-block" id="section-1">
+          <h2>Overview</h2>
+          <div class="content-block__body"><p>Every &quot;no results found&quot; on your site is a shopper who told you exactly what they wanted, and got nothing back. Unlike a bounce from a landing page, a zero-results search is a signal with intent attached - you know the query, you know the shopper was ready to look, and you know your search engine failed to connect them to a product. That gap compounds: you&#x27;ve already paid to get that visitor onto your site through SEO, ads, or email, so a dead-end search burns acquisition spend on top of the lost sale itself. It matters more right now because query patterns are shifting away from exact keyword matches toward natural-language phrasing - &quot;waterproof jacket for hiking in rain,&quot; not &quot;jacket rain.&quot; Traditional keyword-indexed search engines choke on that phrasing even when the product exists in your catalog, which means your zero-results rate can climb even as your catalog and SEO improve. Baymard Institute&#x27;s ecommerce UX research consistently flags site search relevance as one of the highest-leverage, most commonly broken parts of the shopping experience - and it&#x27;s one of the few problems where you have the exact query text a paying customer used, making it unusually cheap to diagnose and fix. Treat your zero-results log as a running list of shoppers raising their hand and telling you what&#x27;s wrong with your search, your merchandising, or your assortment. Ignore it, and you&#x27;re leaving a self-reported list of lost sales sitting unread in an analytics dashboard.</p></div>
+          
+        </section>
+        
+        <section class="content-block" id="section-2">
+          <h2>What To Know</h2>
+          <div class="content-block__body"><p>Zero-results searches fall into a few recurring buckets, and the fix depends entirely on which bucket a query lands in. Typos and misspellings (&quot;legging&quot; vs &quot;leggins&quot;) need fuzzy matching and typo tolerance at the search-engine level. Synonym mismatches (&quot;jumper&quot; vs &quot;sweater,&quot; &quot;trainers&quot; vs &quot;sneakers&quot;) need a synonym dictionary, not new inventory. Pluralization and unit differences (&quot;tee&quot; vs &quot;tees,&quot; &quot;16oz&quot; vs &quot;16 oz&quot;) are tokenization issues. Over-filtering - where a shopper stacks facets (size + color + price) down to zero matches - is a UX problem in your filter logic, not a catalog gap. Out-of-stock or discontinued-item searches mean the product existed but isn&#x27;t returned as &quot;not available&quot; with alternatives. And then there&#x27;s the bucket that matters most commercially: net-new demand, where shoppers are searching for products you genuinely don&#x27;t carry, which is a merchandising and buying signal, not a search bug.</p>
+<p>Most site search platforms - Shopify&#x27;s native search, Algolia, Klevu, Searchspring, Bloomreach, Constructor, Nosto - log every query alongside its result count, and most expose a &quot;zero results&quot; or &quot;no results&quot; report you can export. The distribution of these queries is almost always Pareto-shaped: a small set of unique dead-end terms account for a disproportionate share of total zero-result volume, so fixing your top 20–50 queries typically resolves the majority of the problem. Also watch for &quot;near-zero&quot; searches - technically not zero, but returning one or two irrelevant results - which cause the same abandonment behavior but won&#x27;t show up in a strict zero-results filter. If you run an AI-powered or conversational on-site search (a growing number of DTC brands do, via tools like Buffy&#x27;s on-site AI search), track its dead-end rate separately: semantic matching reduces literal zero-results but can still fail on requests outside your catalog, and those logs are worth mining the same way.</p></div>
+          
+        </section>
+        
+        <section class="content-block" id="section-3">
+          <h2>Step By Step</h2>
+          <div class="content-block__body"><ol><li>Pull your zero-results report. Export at least 90 days of queries with zero (and near-zero) matches from your search platform&#x27;s analytics - Algolia, Klevu, Searchspring, Bloomreach, or your native Shopify/BigCommerce search dashboard all support this.</li></ol>
+<ol><li>Rank by frequency and sort into buckets: typo/misspelling, synonym mismatch, over-filtered, out-of-stock, and net-new demand. Spend most of your time on the top 50 unique queries by volume - that&#x27;s where the revenue is concentrated.</li></ol>
+<ol><li>Fix the mechanical issues first. Add synonym mappings, enable typo tolerance and stemming, and confirm your search engine handles plurals and unit variants. Most platforms let you add these as rules without a developer.</li></ol>
+<ol><li>Add redirects or curated result sets for high-volume dead-end queries that map to a real product or collection you already sell under different naming.</li></ol>
+<ol><li>Rebuild your &quot;no results&quot; page. Never leave it blank. Show top sellers, a link to full collections, a simplified search suggestion, and a visible path to human help (chat or email) - a dead end should never be a dead page.</li></ol>
+<ol><li>Flag net-new demand queries to merchandising or buying. Recurring searches for products you don&#x27;t stock are validated demand signals - cheaper than any market research you&#x27;d otherwise pay for.</li></ol>
+<ol><li>Fix root causes in your filter logic so faceted search degrades gracefully (loosen one filter automatically) instead of returning zero when a shopper stacks too many attributes.</li></ol>
+<ol><li>Set a recurring cadence - weekly or biweekly - with a named owner, and re-pull the report after each fix to confirm the query disappears or drops in volume. Feed recurring zero-result terms into your SEO content calendar and PPC negative-keyword list too, since the same gaps show up there.</li></ol></div>
+          
+        </section>
+        
+        <section class="content-block" id="section-4">
+          <h2>Common Mistakes</h2>
+          <div class="content-block__body"><p>The most common mistake is treating this as a one-time audit instead of an ongoing process. Catalogs change, language trends shift, and new synonym gaps open up constantly - a report pulled once in Q1 tells you nothing about what&#x27;s broken in Q3.</p>
+<p>Second, brands fix the visible symptom (add a redirect) without fixing the underlying search configuration (synonyms, typo tolerance, stemming), so the same class of query keeps failing under slightly different phrasing next month.</p>
+<p>Third, teams ignore &quot;near-zero&quot; results - a search that returns one irrelevant product still reads as a dead end to the shopper, but it won&#x27;t show up if you&#x27;re only filtering for a strict zero count. Pull both.</p>
+<p>Fourth, the &quot;no results found&quot; page itself is often left as a bare, unhelpful message with no suggested products, no simplified search, and no way to get human help - the single highest-leverage fix on this whole list, and the one most often skipped because it feels like a design task rather than a search task.</p>
+<p>Fifth, nobody connects zero-results data to merchandising decisions. A recurring high-volume search for a product you don&#x27;t carry is free demand research; treating it purely as a &quot;search bug&quot; wastes the signal.</p>
+<p>Sixth, brands only look at desktop/web search logs and miss mobile app search or AI/chat-based on-site assistants, which often have separate logs and different failure patterns - a semantic AI search tool can fail gracefully on out-of-catalog requests in ways that still deserve tracking and follow-up.</p>
+<p>Finally, ownership is unclear - zero-results data sits in a search vendor&#x27;s dashboard that nobody on the merchandising or content team ever logs into, so the fixes never get prioritized against other roadmap work.</p></div>
+          
+        </section>
+        
+        <section class="content-block" id="section-5">
+          <h2>Faq</h2>
+          <div class="content-block__body"><div class="faq-item"><h3>What exactly counts as a zero-results search on an ecommerce site?</h3><p>A zero-results search is any query entered into your on-site search bar that returns no matching products - the shopper sees a &quot;no results found&quot; (or equivalent) message instead of a product grid. It&#x27;s distinct from a search that returns irrelevant or very few results (&quot;near-zero&quot;), which causes similar abandonment but won&#x27;t appear in a strict zero-count report, so check both.</p></div>
+<div class="faq-item"><h3>How do I find zero-results searches on my site?</h3><p>Check your site search platform&#x27;s analytics dashboard - Algolia, Klevu, Searchspring, Bloomreach, Constructor, Nosto, and Shopify&#x27;s native search all log every query with its result count, and most have a dedicated &quot;zero results&quot; or &quot;no results&quot; report you can filter and export. If you&#x27;re on a custom search implementation, you&#x27;ll need to instrument logging on the search endpoint yourself, capturing the query string and result count for every request.</p></div>
+<div class="faq-item"><h3>Do zero-results searches actually hurt revenue?</h3><p>Yes, directionally: a zero-results search represents a shopper with explicit purchase intent who found nothing to buy, on a visit you typically paid to generate through SEO, ads, or email. Baymard Institute&#x27;s ecommerce UX research repeatedly identifies poor site search relevance as one of the most common points of shopper abandonment. The exact revenue impact varies by brand and traffic mix, so measure it directly: track add-to-cart and conversion rates for sessions that hit a zero-results page versus sessions that don&#x27;t.</p></div>
+<div class="faq-item"><h3>What&#x27;s the difference between fixing zero-results with synonyms versus redirects?</h3><p>Synonyms fix the search engine&#x27;s understanding so any future query using that alternate term matches correctly going forward (e.g., mapping &quot;jumper&quot; to &quot;sweater&quot; catalog-wide). A redirect or curated result set fixes one specific query string to point at a specific collection or page. Use synonyms for language/vocabulary gaps that will recur in many phrasings; use redirects for specific high-volume queries where you want to control exactly what&#x27;s shown.</p></div>
+<div class="faq-item"><h3>Should I add products just because shoppers are searching for them and getting zero results?</h3><p>Not automatically - first confirm it&#x27;s genuine net-new demand rather than a naming mismatch for something you already sell. If a query recurs consistently over weeks or months and doesn&#x27;t map to an existing product under different phrasing, treat it as validated demand and route it to merchandising or buying as a low-cost signal worth evaluating against your assortment strategy.</p></div></div>
+          
+        </section>
+        
+      
+
+      
+      <footer class="evidence-card" aria-label="Editorial trust and data sources">
+        <section><span class="pill pill--mint">How we built this page</span><p>Buffy&#39;s editorial team developed this guide from the primary and reference sources listed below, then checked material claims for scope and freshness. Reviewed 2026-07-13.</p></section>
+        
+        <a href="https://heybuffy.com/editorial.html">Read our editorial policy →</a>
+      </footer>
+      
+    </div>
+
+    <aside class="article-side">
+      <div class="side-card">
+        <span class="eyebrow">On this page</span>
+        <nav><a href="#section-1">Overview</a><a href="#section-2">What To Know</a><a href="#section-3">Step By Step</a><a href="#section-4">Common Mistakes</a><a href="#section-5">Faq</a></nav>
+      </div>
+      
+      <a class="button button--primary side-cta" href="https://heybuffy.com/">Try Buffy free →</a><small class="side-note">free tier · no card</small>
+    </aside>
+  </div>
+
+  
+  <section class="related"><div class="shell"><h2>Keep reading</h2><div class="related-grid"><a href="/blog/shopify-search-and-discovery-review.html"><span class="pill pill--sky">Field note</span><h3>Shopify Search &amp; Discovery Review: Is the Free Native App Enough?</h3><span>Read article →</span></a><a href="/blog/algolia-shopify.html"><span class="pill pill--sky">Field note</span><h3>Algolia for Shopify: Pricing, Setup, and Alternatives</h3><span>Read article →</span></a><a href="/blog/fast-simon-review.html"><span class="pill pill--sky">Field note</span><h3>Fast Simon Review (2026): Pricing, Features, and Who It Fits</h3><span>Read article →</span></a></div></div></section>
+  
+</article>
+</main>
+
+  <footer class="bfooter">
+    <div class="shell bfooter__grid">
+      <div>
+        <a class="brand-lockup" href="/"><svg class="paw" viewBox="0 0 32 28" aria-hidden="true"><ellipse cx="16" cy="18" rx="8" ry="7"/><circle cx="6" cy="10" r="3"/><circle cx="13" cy="5" r="3"/><circle cx="21" cy="5" r="3"/><circle cx="27" cy="11" r="3"/></svg><span>buffy<span class="brand-dot">.</span></span></a>
+        <p>The AI commerce engine for consumer brands.</p>
+        <span class="sticker">occasional dog photos</span>
+      </div>
+      <div><h2>Explore</h2><a href="/">Field notes</a><a href="/#articles">All articles</a><a href="https://heybuffy.com/search">Buffy Search</a><a href="https://heybuffy.com/intel">Buffy Intel</a></div>
+      <div><h2>Company</h2><a href="/about.html">About</a><a href="/editorial.html">Editorial policy</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a></div>
+      <div class="newsletter"><h2>Notes worth fetching</h2><p>AI-commerce ideas, practical research, and the occasional Buffy update.</p><form><label class="sr-only" for="footer-email">Email</label><input id="footer-email" type="email" placeholder="you@brand.com"><button type="submit" aria-label="Subscribe">→</button></form><small>No spam. Pinky paw promise.</small></div>
+    </div>
+    <div class="shell bfooter__bottom">© 2026 Buffy. Built for brands that want to show up.</div>
+  </footer>
+  <script src="/static/js/main.js?v=6" defer></script>
+  
+</body>
+</html>

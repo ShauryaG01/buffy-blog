@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LLM SEO: How Large Language Models Choose What to Recommend | Buffy</title>
+  <meta name="description" content="How large language models choose what to recommend is no longer a black box and understanding it is what people mean by LLM SEO: the practice of getting…">
+  <link rel="canonical" href="https://heybuffy.com/blog/llm-seo.html">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#F4EFE3">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='20' r='8' fill='%2314143A'/%3E%3Ccircle cx='6' cy='10' r='3' fill='%2314143A'/%3E%3Ccircle cx='13' cy='6' r='3' fill='%2314143A'/%3E%3Ccircle cx='21' cy='6' r='3' fill='%2314143A'/%3E%3Ccircle cx='27' cy='11' r='3' fill='%2314143A'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="/static/css/main.css?v=6">
+  
+  <meta property="og:site_name" content="Buffy">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="LLM SEO: How Large Language Models Choose What to Recommend | Buffy">
+  <meta property="og:description" content="How large language models choose what to recommend is no longer a black box and understanding it is what people mean by LLM SEO: the practice of getting…">
+  <meta property="og:url" content="https://heybuffy.com/blog/llm-seo.html">
+  
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LLM SEO: How Large Language Models Choose What to Recommend | Buffy">
+  <meta name="twitter:description" content="How large language models choose what to recommend is no longer a black box and understanding it is what people mean by LLM SEO: the practice of getting…">
+  
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://heybuffy.com/"}, {"@type": "ListItem", "position": 2, "name": "Playbook", "item": "https://heybuffy.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "LLM SEO: How Large Language Models Choose What to Recommend", "item": "https://heybuffy.com/blog/llm-seo.html"}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "name": "LLM SEO: How Large Language Models Choose What to Recommend", "headline": "LLM SEO: How Large Language Models Choose What to Recommend", "description": "What we know about how LLMs select brands and products, and what that means for your content.", "@id": "https://heybuffy.com/blog/llm-seo.html", "url": "https://heybuffy.com/blog/llm-seo.html", "@graph": [{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do large language models decide which brands to recommend?", "acceptedAnswer": {"@type": "Answer", "text": "They combine two things: what's baked into their training data (parametric memory) and what they retrieve live from search or vector indexes when they answer. For well-known brands, opinions already exist in training data from sources like Reddit, review sites, and news coverage. For smaller or newer brands, the model leans almost entirely on live retrieval - so what shows up in search results and third-party content at that moment determines whether you get mentioned."}}, {"@type": "Question", "name": "Does ChatGPT use Google search results to recommend products?", "acceptedAnswer": {"@type": "Answer", "text": "Not directly. ChatGPT's browsing/search feature draws on Bing's index via Microsoft's partnership rather than Google's, Perplexity runs its own crawler and index, and Google's AI Overviews pull from Google's own index. Being visible in one doesn't guarantee visibility in another - check each platform separately rather than assuming your Google rankings carry over."}}, {"@type": "Question", "name": "Is LLM SEO different from regular SEO?", "acceptedAnswer": {"@type": "Answer", "text": "They overlap but aren't the same. Traditional SEO optimizes for ranking a page in a results list; LLM SEO optimizes for being the specific fact or claim a model extracts and repeats in a generated answer. Technical fundamentals like crawlability and indexing still matter for both, but LLM SEO puts far more weight on third-party validation, extractable formatting, and factual consistency across the web than on keyword targeting or backlink count alone."}}, {"@type": "Question", "name": "How can I tell if my brand shows up in AI search results?", "acceptedAnswer": {"@type": "Answer", "text": "Manually query ChatGPT, Claude, Perplexity, and Google AI Overviews with the questions your buyers would actually ask - category comparisons, \"best X for Y\", and direct brand-vs-brand questions - and log whether you're mentioned and what's cited. For ongoing tracking without doing this by hand every week, use a dedicated AI-visibility monitoring tool that checks these platforms on a schedule and flags when mentions change."}}, {"@type": "Question", "name": "Do AI crawlers like GPTBot need to be allowed in robots.txt?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, if you want your content eligible for retrieval by that platform. GPTBot (OpenAI), ClaudeBot (Anthropic), PerplexityBot, and Google-Extended (used for Gemini and AI Overviews) each respect robots.txt directives independently. Many sites block them unintentionally through security plugins or CDN 'bot fight' defaults - check your robots.txt and server logs directly rather than assuming default settings allow access."}}], "url": "https://heybuffy.com/blog/llm-seo.html"}], "author": {"@type": "Organization", "name": "Buffy Intel", "jobTitle": "AI Commerce Intelligence", "url": "https://heybuffy.com/about"}, "publisher": {"@type": "Organization", "name": "Buffy", "url": "https://heybuffy.com"}, "datePublished": "2026-07-09", "dateModified": "2026-07-09"}</script>
+  
+</head>
+<body>
+  <header class="bnav" data-nav>
+    <div class="shell bnav__inner">
+      <a class="brand-lockup" href="/" aria-label="Buffy home">
+        <svg class="paw" viewBox="0 0 32 28" aria-hidden="true"><ellipse cx="16" cy="18" rx="8" ry="7"/><circle cx="6" cy="10" r="3"/><circle cx="13" cy="5" r="3"/><circle cx="21" cy="5" r="3"/><circle cx="27" cy="11" r="3"/></svg>
+        <span>buffy<span class="brand-dot">.</span></span><i>blog</i>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-menu" data-nav-toggle><span></span><span></span><span></span><b class="sr-only">Menu</b></button>
+      <nav class="bnav__menu" id="main-menu" data-nav-menu>
+        <a class="is-active" href="/">Blog</a>
+        <a href="https://heybuffy.com/search">Buffy Search</a>
+        <a href="https://heybuffy.com/intel">Buffy Intel</a>
+        <a href="/#articles">AI Visibility Index</a>
+        <a href="https://heybuffy.com/pricing">Pricing</a>
+        <a class="button button--primary" href="https://heybuffy.com/">Start for free <span>→</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="reading-progress" data-progress></div>
+  <main>
+
+
+<article class="article article--playbook">
+  <header class="article-hero shell shell--article">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Blog</a><span>/</span><span>Playbook</span></nav>
+    <div class="article-kickers"><span class="pill pill--peach">Playbook</span><span class="sticker">editorial draft</span></div>
+    <h1>LLM SEO: How Large Language Models Choose What to Recommend</h1>
+    <p class="article-dek">What we know about how LLMs select brands and products, and what that means for your content.</p>
+    
+    
+    <div class="byline"><span class="byline__avatar">B</span><span><strong>Buffy Intel</strong><small>2026-07-09 · 8 min read</small></span></div>
+    
+  </header>
+
+  <div class="article-layout shell">
+    <div class="prose">
+      
+        
+        <section class="content-block" id="section-1">
+          <h2>Overview</h2>
+          <div class="content-block__body"><p>How large language models choose what to recommend is no longer a black box - and understanding it is what people mean by LLM SEO: the practice of getting ChatGPT, Claude, Gemini, Perplexity, and Google&#x27;s AI Overviews to mention, describe, and recommend your brand when someone asks a question in your category. It&#x27;s related to traditional SEO but runs on different rules: instead of ranking a page in a list of ten blue links, you&#x27;re trying to be the fact a model retrieves, trusts, and repeats when it synthesizes an answer.</p>
+<p>This matters right now because a growing share of product research has moved from &quot;search and click&quot; to &quot;ask and read.&quot; Someone shopping for a compression sock brand, a protein powder, or project management software increasingly types a comparison question into ChatGPT or Perplexity and acts on whatever the model names - often without visiting a website to cross-check. If your brand isn&#x27;t part of the answer, you&#x27;re invisible at the exact moment intent is highest, regardless of how well you rank on Google.</p>
+<p>For DTC brands specifically, this shift changes where marketing effort pays off. Paid search and even strong organic rankings don&#x27;t automatically translate into AI visibility - a model can ignore your #1-ranking page entirely if it can&#x27;t extract a clean, citable answer from it, or if it trusts a Reddit thread and a review roundup more than your product page. Winning here means understanding the actual mechanics of how these systems select and repeat information, then adjusting both what you publish and where you show up across the rest of the web. The rest of this page breaks down those mechanics and gives you a concrete sequence to act on.</p></div>
+          
+        </section>
+        
+        <section class="content-block" id="section-2">
+          <h2>What To Know</h2>
+          <div class="content-block__body"><p>Before you touch your content strategy, understand four things about how LLMs actually pick what to recommend.</p>
+<p>Retrieval and generation are separate steps. Tools like ChatGPT (with browsing), Perplexity, and Google AI Overviews run a search or vector lookup first, pull back a set of candidate pages or passages, then use the model to write an answer grounded in that set. If your page never gets retrieved - because it&#x27;s blocked, unindexed, or semantically distant from the query - it can&#x27;t be recommended, no matter how good it is.</p>
+<p>Some knowledge is &quot;baked in,&quot; not retrieved. For very well-known brands, the model&#x27;s pretraining data (Common Crawl, Reddit, Wikipedia, news archives) already contains opinions about you. This is why large, frequently-discussed brands show up in answers even without live search - and why smaller or newer brands depend almost entirely on real-time retrieval and third-party mentions to be visible at all.</p>
+<p>Third-party validation outweighs your own claims. LLMs are trained to discount self-promotional language. They weight independent sources - comparison sites, review platforms like G2 or Trustpilot, Reddit threads, &quot;best of&quot; roundups - more heavily than your homepage, because those sources aren&#x27;t the ones making the sale.</p>
+<p>Extractable formatting gets quoted; marketing copy doesn&#x27;t. Direct declarative sentences, comparison tables, and clearly scoped FAQs are easy for a model to lift and attribute. Vague, adjective-heavy brand copy (&quot;revolutionary,&quot; &quot;industry-leading&quot;) gives the model nothing concrete to cite.</p>
+<p>Finally, crawler access is a prerequisite, not a nice-to-have. If GPTBot, ClaudeBot, PerplexityBot, or Google-Extended are blocked in robots.txt - often by accident, via a security plugin or CDN default - you&#x27;re structurally excluded from that model&#x27;s retrieval pool regardless of content quality.</p></div>
+          
+        </section>
+        
+        <section class="content-block" id="section-3">
+          <h2>Step By Step</h2>
+          <div class="content-block__body"><p>Work through these in order - each step depends on what you learn in the one before it.</p>
+<ol><li>Audit your current AI visibility. Ask ChatGPT, Perplexity, Claude, and Google AI Overviews the questions a real buyer would ask in your category (&quot;best [category] for [use case]&quot;, &quot;[your product] vs [competitor]&quot;). Note whether you&#x27;re mentioned, how you&#x27;re described, and which sources the model cites.</li><li>Check crawler access. Look at robots.txt and your CDN/WAF rules for GPTBot, ClaudeBot, PerplexityBot, Google-Extended, and Bingbot. Confirm in server logs that these bots are actually reaching your site - a permissive robots.txt doesn&#x27;t help if a firewall rule silently blocks them anyway.</li><li>Map where the models are pulling answers from. If a competitor gets recommended and you don&#x27;t, find the specific source the model cited - a Reddit thread, a roundup article, a review site - and note the gap.</li><li>Build third-party presence deliberately. Pursue inclusion in comparison articles, review platforms relevant to your category, and category-specific communities. These sources carry more weight with LLMs than owned content ever will.</li><li>Rewrite key pages for extractability. Add direct-answer summaries near the top, comparison tables against named alternatives, and FAQ sections with plain declarative answers. State who a product is for and who it isn&#x27;t for - specificity reads as more trustworthy than universal claims.</li><li>Publish original data. According to research on generative engine optimization from Princeton (Aggarwal et al., 2024), adding citations and original statistics to a page measurably increased how often generative engines cited it. A proprietary stat is more citable than another opinion.</li><li>Track and repeat monthly. AI answers shift as models retrain and re-index. A platform like Buffy can continuously track how and how often your brand surfaces across AI answers so you catch drift before a competitor fills the gap - re-run your step 1 query list every few weeks and adjust based on what changed.</li></ol></div>
+          
+        </section>
+        
+        <section class="content-block" id="section-4">
+          <h2>Common Mistakes</h2>
+          <div class="content-block__body"><p>Treating this like keyword SEO. Stuffing product names or category keywords into copy doesn&#x27;t help a model that&#x27;s synthesizing an answer from meaning, not matching strings. Keyword-stuffed pages often read as low-trust to a model trained to detect promotional patterns, and get skipped in favor of a source that sounds independent.</p>
+<p>Blocking AI crawlers by accident. Security plugins, Cloudflare bot-fight mode, and some CDN defaults block GPTBot, ClaudeBot, and PerplexityBot along with the scrapers they&#x27;re meant to stop. Check this before doing anything else - it&#x27;s the single most common reason a brand is invisible to AI search despite strong content.</p>
+<p>Only optimizing owned pages. Your website is one input among many, and often not the most trusted one. Brands that pour all their effort into the homepage and product pages while ignoring Reddit threads, review sites, and comparison articles are optimizing the channel LLMs trust least.</p>
+<p>Letting facts drift across the web. If your pricing, positioning, or category description differs between your site, your Google Business Profile, review platforms, and press mentions, you create the kind of contradiction that makes a model hedge or drop you from an answer entirely rather than risk citing something wrong. Consistency across every mention of your brand matters more here than it did for traditional SEO.</p>
+<p>Writing for humans skimming, not models extracting. A paragraph that reads well to a person can still be hard for a model to cite cleanly if the actual answer is buried in the third sentence of the fourth paragraph. Put the direct answer first, then the supporting narrative - whether you&#x27;re selling productivity tools to professionals in India or skincare to shoppers in the U.S., the model needs the claim stated plainly before it will repeat it.</p>
+<p>Never measuring it. Most brands have no idea whether they show up in ChatGPT or Perplexity answers for their own category. Without a baseline, you can&#x27;t tell if changes are working or if a competitor is quietly winning the citations you&#x27;re not tracking.</p></div>
+          
+        </section>
+        
+        <section class="content-block" id="section-5">
+          <h2>Faq</h2>
+          <div class="content-block__body"><div class="faq-item"><h3>How do large language models decide which brands to recommend?</h3><p>They combine two things: what&#x27;s baked into their training data (parametric memory) and what they retrieve live from search or vector indexes when they answer. For well-known brands, opinions already exist in training data from sources like Reddit, review sites, and news coverage. For smaller or newer brands, the model leans almost entirely on live retrieval - so what shows up in search results and third-party content at that moment determines whether you get mentioned.</p></div>
+<div class="faq-item"><h3>Does ChatGPT use Google search results to recommend products?</h3><p>Not directly. ChatGPT&#x27;s browsing/search feature draws on Bing&#x27;s index via Microsoft&#x27;s partnership rather than Google&#x27;s, Perplexity runs its own crawler and index, and Google&#x27;s AI Overviews pull from Google&#x27;s own index. Being visible in one doesn&#x27;t guarantee visibility in another - check each platform separately rather than assuming your Google rankings carry over.</p></div>
+<div class="faq-item"><h3>Is LLM SEO different from regular SEO?</h3><p>They overlap but aren&#x27;t the same. Traditional SEO optimizes for ranking a page in a results list; LLM SEO optimizes for being the specific fact or claim a model extracts and repeats in a generated answer. Technical fundamentals like crawlability and indexing still matter for both, but LLM SEO puts far more weight on third-party validation, extractable formatting, and factual consistency across the web than on keyword targeting or backlink count alone.</p></div>
+<div class="faq-item"><h3>How can I tell if my brand shows up in AI search results?</h3><p>Manually query ChatGPT, Claude, Perplexity, and Google AI Overviews with the questions your buyers would actually ask - category comparisons, &quot;best X for Y&quot;, and direct brand-vs-brand questions - and log whether you&#x27;re mentioned and what&#x27;s cited. For ongoing tracking without doing this by hand every week, use a dedicated AI-visibility monitoring tool that checks these platforms on a schedule and flags when mentions change.</p></div>
+<div class="faq-item"><h3>Do AI crawlers like GPTBot need to be allowed in robots.txt?</h3><p>Yes, if you want your content eligible for retrieval by that platform. GPTBot (OpenAI), ClaudeBot (Anthropic), PerplexityBot, and Google-Extended (used for Gemini and AI Overviews) each respect robots.txt directives independently. Many sites block them unintentionally through security plugins or CDN &#x27;bot fight&#x27; defaults - check your robots.txt and server logs directly rather than assuming default settings allow access.</p></div></div>
+          
+        </section>
+        
+      
+
+      
+      <footer class="evidence-card" aria-label="Editorial trust and data sources">
+        <section><span class="pill pill--mint">How we built this page</span><p>Buffy&#39;s editorial team developed this guide from the primary and reference sources listed below, then checked material claims for scope and freshness. Reviewed 2026-07-13.</p></section>
+        
+        <a href="https://heybuffy.com/editorial.html">Read our editorial policy →</a>
+      </footer>
+      
+    </div>
+
+    <aside class="article-side">
+      <div class="side-card">
+        <span class="eyebrow">On this page</span>
+        <nav><a href="#section-1">Overview</a><a href="#section-2">What To Know</a><a href="#section-3">Step By Step</a><a href="#section-4">Common Mistakes</a><a href="#section-5">Faq</a></nav>
+      </div>
+      
+      <a class="button button--primary side-cta" href="https://heybuffy.com/">Try Buffy free →</a><small class="side-note">free tier · no card</small>
+    </aside>
+  </div>
+
+  
+  <section class="related"><div class="shell"><h2>Keep reading</h2><div class="related-grid"><a href="/blog/frase-review.html"><span class="pill pill--sky">Field note</span><h3>Frase Review (2026): Features, Pricing, and Fit</h3><span>Read article →</span></a><a href="/blog/profound-vs-peec-vs-otterly.html"><span class="pill pill--sky">Field note</span><h3>Profound vs Peec vs Otterly: AI Visibility Tools Head-to-Head</h3><span>Read article →</span></a><a href="/blog/surfer-seo-review.html"><span class="pill pill--sky">Field note</span><h3>Surfer SEO Review (2026): Features, Pricing, and Fit</h3><span>Read article →</span></a></div></div></section>
+  
+</article>
+</main>
+
+  <footer class="bfooter">
+    <div class="shell bfooter__grid">
+      <div>
+        <a class="brand-lockup" href="/"><svg class="paw" viewBox="0 0 32 28" aria-hidden="true"><ellipse cx="16" cy="18" rx="8" ry="7"/><circle cx="6" cy="10" r="3"/><circle cx="13" cy="5" r="3"/><circle cx="21" cy="5" r="3"/><circle cx="27" cy="11" r="3"/></svg><span>buffy<span class="brand-dot">.</span></span></a>
+        <p>The AI commerce engine for consumer brands.</p>
+        <span class="sticker">occasional dog photos</span>
+      </div>
+      <div><h2>Explore</h2><a href="/">Field notes</a><a href="/#articles">All articles</a><a href="https://heybuffy.com/search">Buffy Search</a><a href="https://heybuffy.com/intel">Buffy Intel</a></div>
+      <div><h2>Company</h2><a href="/about.html">About</a><a href="/editorial.html">Editorial policy</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a></div>
+      <div class="newsletter"><h2>Notes worth fetching</h2><p>AI-commerce ideas, practical research, and the occasional Buffy update.</p><form><label class="sr-only" for="footer-email">Email</label><input id="footer-email" type="email" placeholder="you@brand.com"><button type="submit" aria-label="Subscribe">→</button></form><small>No spam. Pinky paw promise.</small></div>
+    </div>
+    <div class="shell bfooter__bottom">© 2026 Buffy. Built for brands that want to show up.</div>
+  </footer>
+  <script src="/static/js/main.js?v=6" defer></script>
+  
+</body>
+</html>

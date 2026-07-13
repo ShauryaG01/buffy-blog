@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Choosing an Ecommerce Search Engine: Build, Buy, or Native? | Buffy</title>
+  <meta name="description" content="Site search isn&#39;t a UX nicety it&#39;s a distinct revenue channel with its own conversion rate, and treating the underlying engine as a solved problem is one of…">
+  <link rel="canonical" href="https://heybuffy.com/blog/ecommerce-search-engine.html">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#F4EFE3">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='20' r='8' fill='%2314143A'/%3E%3Ccircle cx='6' cy='10' r='3' fill='%2314143A'/%3E%3Ccircle cx='13' cy='6' r='3' fill='%2314143A'/%3E%3Ccircle cx='21' cy='6' r='3' fill='%2314143A'/%3E%3Ccircle cx='27' cy='11' r='3' fill='%2314143A'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="/static/css/main.css?v=6">
+  
+  <meta property="og:site_name" content="Buffy">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Choosing an Ecommerce Search Engine: Build, Buy, or Native? | Buffy">
+  <meta property="og:description" content="Site search isn&#39;t a UX nicety it&#39;s a distinct revenue channel with its own conversion rate, and treating the underlying engine as a solved problem is one of…">
+  <meta property="og:url" content="https://heybuffy.com/blog/ecommerce-search-engine.html">
+  
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Choosing an Ecommerce Search Engine: Build, Buy, or Native? | Buffy">
+  <meta name="twitter:description" content="Site search isn&#39;t a UX nicety it&#39;s a distinct revenue channel with its own conversion rate, and treating the underlying engine as a solved problem is one of…">
+  
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://heybuffy.com/"}, {"@type": "ListItem", "position": 2, "name": "Playbook", "item": "https://heybuffy.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Choosing an Ecommerce Search Engine: Build, Buy, or Native?", "item": "https://heybuffy.com/blog/ecommerce-search-engine.html"}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "name": "Choosing an Ecommerce Search Engine: Build, Buy, or Native?", "headline": "Choosing an Ecommerce Search Engine: Build, Buy, or Native?", "description": "The technology decision behind site search - relevance engines, AI search, and what actually matters at each store size.", "@id": "https://heybuffy.com/blog/ecommerce-search-engine.html", "url": "https://heybuffy.com/blog/ecommerce-search-engine.html", "@graph": [{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is Shopify's native search good enough for a small store?", "acceptedAnswer": {"@type": "Answer", "text": "For most stores under roughly 500 SKUs with mostly exact-match or simple attribute queries, yes - Shopify's Search & Discovery app now includes synonym handling and basic ML ranking at no extra cost. Upgrade once you need merchandising rules (boosting margin products, burying out-of-stock items), complex faceting, or your zero-result rate climbs above single digits."}}, {"@type": "Question", "name": "When should a DTC brand pay for a dedicated search engine like Algolia or Klevu?", "acceptedAnswer": {"@type": "Answer", "text": "The trigger is usually catalog complexity and query mix, not revenue size: once you're managing a few thousand SKUs with meaningful variant or attribute depth, running frequent promotions that need merchandising rules, or seeing a rising zero-result rate on discovery-style queries, a bought relevance engine typically pays for itself within a few months of the trial."}}, {"@type": "Question", "name": "What's the difference between keyword search and AI/semantic search?", "acceptedAnswer": {"@type": "Answer", "text": "Keyword search matches the literal words in a query against product text and relies on manually maintained synonym lists to bridge gaps. Semantic (AI) search uses vector embeddings to match intent and meaning, so a query like 'cozy fall sweater' can surface relevant products even if none of them contain those exact words. Most modern relevance engines now blend both - keyword for precision, semantic for recall."}}, {"@type": "Question", "name": "Should I build my own ecommerce search engine in-house?", "acceptedAnswer": {"@type": "Answer", "text": "Only if your search requirements are tied to proprietary data or systems you already own - real-time multi-location inventory, a custom personalization or ML pipeline, or search feeding a recommendation engine - and you can dedicate ongoing engineering time to it, not just a launch sprint. For the large majority of DTC brands, a bought engine delivers comparable relevance quality for a fraction of the maintenance burden."}}, {"@type": "Question", "name": "How do I know if my site search is losing sales?", "acceptedAnswer": {"@type": "Answer", "text": "Check three numbers: zero-result rate (searches returning nothing - anything meaningfully above 5-10% is a red flag), search-to-conversion rate compared to your overall site conversion rate (search users should convert higher, not lower), and click position on your top queries (if shoppers are clicking result 8 instead of result 1, your ranking is off). Any search analytics tool or your platform's built-in reporting should surface all three."}}], "url": "https://heybuffy.com/blog/ecommerce-search-engine.html"}], "author": {"@type": "Organization", "name": "Buffy Intel", "jobTitle": "AI Commerce Intelligence", "url": "https://heybuffy.com/about"}, "publisher": {"@type": "Organization", "name": "Buffy", "url": "https://heybuffy.com"}, "datePublished": "2026-07-09", "dateModified": "2026-07-09"}</script>
+  
+</head>
+<body>
+  <header class="bnav" data-nav>
+    <div class="shell bnav__inner">
+      <a class="brand-lockup" href="/" aria-label="Buffy home">
+        <svg class="paw" viewBox="0 0 32 28" aria-hidden="true"><ellipse cx="16" cy="18" rx="8" ry="7"/><circle cx="6" cy="10" r="3"/><circle cx="13" cy="5" r="3"/><circle cx="21" cy="5" r="3"/><circle cx="27" cy="11" r="3"/></svg>
+        <span>buffy<span class="brand-dot">.</span></span><i>blog</i>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-menu" data-nav-toggle><span></span><span></span><span></span><b class="sr-only">Menu</b></button>
+      <nav class="bnav__menu" id="main-menu" data-nav-menu>
+        <a class="is-active" href="/">Blog</a>
+        <a href="https://heybuffy.com/search">Buffy Search</a>
+        <a href="https://heybuffy.com/intel">Buffy Intel</a>
+        <a href="/#articles">AI Visibility Index</a>
+        <a href="https://heybuffy.com/pricing">Pricing</a>
+        <a class="button button--primary" href="https://heybuffy.com/">Start for free <span>→</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="reading-progress" data-progress></div>
+  <main>
+
+
+<article class="article article--playbook">
+  <header class="article-hero shell shell--article">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Blog</a><span>/</span><span>Playbook</span></nav>
+    <div class="article-kickers"><span class="pill pill--peach">Playbook</span><span class="sticker">editorial draft</span></div>
+    <h1>Choosing an Ecommerce Search Engine: Build, Buy, or Native?</h1>
+    <p class="article-dek">The technology decision behind site search - relevance engines, AI search, and what actually matters at each store size.</p>
+    
+    
+    <div class="byline"><span class="byline__avatar">B</span><span><strong>Buffy Intel</strong><small>2026-07-09 · 7 min read</small></span></div>
+    
+  </header>
+
+  <div class="article-layout shell">
+    <div class="prose">
+      
+        
+        <section class="content-block" id="section-1">
+          <h2>Overview</h2>
+          <div class="content-block__body"><p>Site search isn&#x27;t a UX nicety - it&#x27;s a distinct revenue channel with its own conversion rate, and treating the underlying engine as a solved problem is one of the more expensive mistakes a growing DTC brand can make. According to Baymard Institute&#x27;s long-running site search usability research, shoppers who use search convert at noticeably higher rates than pure browsers, but only when the results returned are actually relevant to what they typed - irrelevant or empty results cost you the sale on the spot.</p>
+<p>The decision you&#x27;re actually making isn&#x27;t &quot;do we need search,&quot; it&#x27;s which of three architectures powers it: the native search bundled into your ecommerce platform, a bought relevance engine (Algolia, Klevu, Searchspring, Constructor, Bloomreach, etc.), or a custom-built system on something like Elasticsearch or a vector database. Each has gotten more capable over the past two years as AI/LLM-based semantic and conversational search has moved from novelty to table stakes - shoppers now type natural-language queries (&quot;something for a beach wedding under $100&quot;) and expect a relevant answer, not just a list of keyword matches.</p>
+<p>This matters right now because the gap between &quot;good enough native search&quot; and &quot;you need a real relevance engine&quot; isn&#x27;t about brand size or funding - it&#x27;s about catalog complexity and query intent. Get the tier wrong in either direction and you&#x27;re either overpaying for enterprise tooling a 200-SKU store doesn&#x27;t need, or leaking revenue through zero-result searches on a 15,000-SKU catalog that outgrew its platform default months ago. This page walks through how to make that call correctly, and how to revisit it as you scale.</p></div>
+          
+        </section>
+        
+        <section class="content-block" id="section-2">
+          <h2>What To Know</h2>
+          <div class="content-block__body"><p>Three architectures, three tradeoffs.</p>
+<p>Native search ships with your platform - Shopify&#x27;s Search &amp; Discovery app, BigCommerce&#x27;s built-in search, and similar. It&#x27;s free, requires no engineering, and has genuinely improved: Shopify&#x27;s version now does synonym handling and some ML-based ranking out of the box. Its ceiling is low on merchandising control - you can&#x27;t easily boost margin SKUs, build complex faceted filters, or run search-specific A/B tests.</p>
+<p>Bought relevance engines (Algolia, Klevu, Searchspring, Constructor, Bloomreach, Nosto) are SaaS products purpose-built for commerce search. You get faceting, synonym and typo management, merchandising rules (boost/bury, pin results, out-of-stock handling), and increasingly semantic/AI ranking layered on top of keyword matching. Pricing scales with catalog size and search volume - this is where most brands in the 1,000–50,000 SKU range end up once native search&#x27;s zero-result rate starts hurting.</p>
+<p>Built systems - a custom stack on Elasticsearch, OpenSearch, or a vector database (Pinecone, Weaviate) - make sense when search is inseparable from proprietary data: real-time inventory across dozens of locations, personalization tied to a first-party ML pipeline, or search behavior feeding a recommendation engine you already own. This is an ongoing infrastructure and ML commitment, not a project - budget for a dedicated engineer, not a sprint.</p>
+<p>The newer variable is AI search itself: vector/semantic matching that understands intent and synonyms without manual rules, and conversational interfaces that let shoppers ask questions instead of typing keywords. Some brands add this as a layer on top of existing search infrastructure - tools like Buffy sit on your storefront as an AI search and shopping assistant without requiring you to rip out the underlying relevance engine - rather than as a full replacement. A professional evaluation scores each option against your actual catalog size, query mix, and merchandising needs, not against what a competitor twice your size uses. A lean team can run a bought engine well - whether that&#x27;s two people in Austin or an outsourced engineering group in India - but almost none can maintain a built one part-time.</p></div>
+          
+        </section>
+        
+        <section class="content-block" id="section-3">
+          <h2>Step By Step</h2>
+          <div class="content-block__body"><ol><li>Pull your current search analytics. Get the zero-result rate (searches returning nothing), the search-to-conversion rate versus site-wide conversion, and your top 50 queries by volume. If your platform doesn&#x27;t expose this, that&#x27;s already a signal you&#x27;re under-tooled.</li></ol>
+<ol><li>Segment your catalog by complexity, not just size: SKU count, number of attributes/variants, number of locales or currencies, and turnover rate. A 3,000-SKU catalog with heavy variants (size/color/material) behaves like a much bigger catalog for search purposes.</li></ol>
+<ol><li>Classify your query mix. Pull a sample of real searches and bucket them into exact-match (SKU, model number, exact product name), attribute-based (&quot;waterproof black boots size 9&quot;), and discovery/natural-language (&quot;gift for a runner&quot;). Native search handles the first bucket fine; the other two are where bought or AI-layered engines earn their cost.</li></ol>
+<ol><li>Match your profile to a tier. Under roughly 500 SKUs with mostly exact-match queries: native is usually fine. Hundreds to tens of thousands of SKUs with faceted or discovery-heavy queries: pilot a bought relevance engine. Tens of thousands of SKUs, multi-locale, or search feeding a proprietary ML/personalization pipeline: build or heavily customize.</li></ol>
+<ol><li>Pilot before you commit. Algolia, Klevu, and Searchspring all offer trials or low-commitment tiers - run one against your real catalog and A/B test it against your current search on zero-result rate and search-to-cart rate before signing an annual contract.</li></ol>
+<ol><li>If natural-language queries are a meaningful share of your traffic, add an AI search layer (a conversational assistant like Buffy, or your relevance engine&#x27;s own semantic mode) rather than replacing your whole stack at once. It&#x27;s lower-risk and easier to measure in isolation.</li></ol>
+<ol><li>Set a review trigger, not a review date. Re-run this audit when SKU count crosses a threshold (500, 5,000, 20,000) or when zero-result rate climbs above roughly 5-10% of searches, whichever comes first.</li></ol></div>
+          
+        </section>
+        
+        <section class="content-block" id="section-4">
+          <h2>Common Mistakes</h2>
+          <div class="content-block__body"><p>Ignoring the zero-result rate. This is the single clearest signal that search is costing you revenue - every zero-result query is a shopper who told you exactly what they wanted and left empty-handed. Check it monthly at minimum; most brands never check it at all.</p>
+<p>Buying enterprise search before you need it. A 300-SKU store adopting a full enterprise relevance engine is paying for merchandising rules and facet management it has no catalog complexity to justify. Match spend to catalog complexity and query mix, not to what a larger competitor uses.</p>
+<p>Migrating search without migrating the rules. When brands switch engines, they often move products but forget to rebuild synonym lists, boost/bury rules, and redirect logic for common misspellings - search quality regresses right after an &quot;upgrade,&quot; and the team doesn&#x27;t know why.</p>
+<p>Testing only on desktop. Mobile search behavior (shorter queries, more typos, heavier reliance on autocomplete) differs from desktop, and a redesign or engine swap tested only on desktop routinely tanks mobile search conversion without anyone noticing until the next monthly report.</p>
+<p>Treating &quot;AI search&quot; as one product. A generative chat widget that answers questions is a different thing from a semantic ranking layer that improves relevance for typed queries - brands buy one expecting it to fix the other and end up disappointed with both.</p>
+<p>Letting merchandising rules go stale. Boost/bury rules and synonym lists set up at launch don&#x27;t get revisited as the catalog and promo calendar change, so search quietly starts surfacing out-of-season or out-of-stock items as top results.</p></div>
+          
+        </section>
+        
+        <section class="content-block" id="section-5">
+          <h2>Faq</h2>
+          <div class="content-block__body"><div class="faq-item"><h3>Is Shopify&#x27;s native search good enough for a small store?</h3><p>For most stores under roughly 500 SKUs with mostly exact-match or simple attribute queries, yes - Shopify&#x27;s Search &amp; Discovery app now includes synonym handling and basic ML ranking at no extra cost. Upgrade once you need merchandising rules (boosting margin products, burying out-of-stock items), complex faceting, or your zero-result rate climbs above single digits.</p></div>
+<div class="faq-item"><h3>When should a DTC brand pay for a dedicated search engine like Algolia or Klevu?</h3><p>The trigger is usually catalog complexity and query mix, not revenue size: once you&#x27;re managing a few thousand SKUs with meaningful variant or attribute depth, running frequent promotions that need merchandising rules, or seeing a rising zero-result rate on discovery-style queries, a bought relevance engine typically pays for itself within a few months of the trial.</p></div>
+<div class="faq-item"><h3>What&#x27;s the difference between keyword search and AI/semantic search?</h3><p>Keyword search matches the literal words in a query against product text and relies on manually maintained synonym lists to bridge gaps. Semantic (AI) search uses vector embeddings to match intent and meaning, so a query like &#x27;cozy fall sweater&#x27; can surface relevant products even if none of them contain those exact words. Most modern relevance engines now blend both - keyword for precision, semantic for recall.</p></div>
+<div class="faq-item"><h3>Should I build my own ecommerce search engine in-house?</h3><p>Only if your search requirements are tied to proprietary data or systems you already own - real-time multi-location inventory, a custom personalization or ML pipeline, or search feeding a recommendation engine - and you can dedicate ongoing engineering time to it, not just a launch sprint. For the large majority of DTC brands, a bought engine delivers comparable relevance quality for a fraction of the maintenance burden.</p></div>
+<div class="faq-item"><h3>How do I know if my site search is losing sales?</h3><p>Check three numbers: zero-result rate (searches returning nothing - anything meaningfully above 5-10% is a red flag), search-to-conversion rate compared to your overall site conversion rate (search users should convert higher, not lower), and click position on your top queries (if shoppers are clicking result 8 instead of result 1, your ranking is off). Any search analytics tool or your platform&#x27;s built-in reporting should surface all three.</p></div></div>
+          
+        </section>
+        
+      
+
+      
+      <footer class="evidence-card" aria-label="Editorial trust and data sources">
+        <section><span class="pill pill--mint">How we built this page</span><p>Buffy&#39;s editorial team developed this guide from the primary and reference sources listed below, then checked material claims for scope and freshness. Reviewed 2026-07-13.</p></section>
+        
+        <a href="https://heybuffy.com/editorial.html">Read our editorial policy →</a>
+      </footer>
+      
+    </div>
+
+    <aside class="article-side">
+      <div class="side-card">
+        <span class="eyebrow">On this page</span>
+        <nav><a href="#section-1">Overview</a><a href="#section-2">What To Know</a><a href="#section-3">Step By Step</a><a href="#section-4">Common Mistakes</a><a href="#section-5">Faq</a></nav>
+      </div>
+      
+      <a class="button button--primary side-cta" href="https://heybuffy.com/">Try Buffy free →</a><small class="side-note">free tier · no card</small>
+    </aside>
+  </div>
+
+  
+  <section class="related"><div class="shell"><h2>Keep reading</h2><div class="related-grid"><a href="/blog/shopify-search-and-discovery-review.html"><span class="pill pill--sky">Field note</span><h3>Shopify Search &amp; Discovery Review: Is the Free Native App Enough?</h3><span>Read article →</span></a><a href="/blog/algolia-shopify.html"><span class="pill pill--sky">Field note</span><h3>Algolia for Shopify: Pricing, Setup, and Alternatives</h3><span>Read article →</span></a><a href="/blog/fast-simon-review.html"><span class="pill pill--sky">Field note</span><h3>Fast Simon Review (2026): Pricing, Features, and Who It Fits</h3><span>Read article →</span></a></div></div></section>
+  
+</article>
+</main>
+
+  <footer class="bfooter">
+    <div class="shell bfooter__grid">
+      <div>
+        <a class="brand-lockup" href="/"><svg class="paw" viewBox="0 0 32 28" aria-hidden="true"><ellipse cx="16" cy="18" rx="8" ry="7"/><circle cx="6" cy="10" r="3"/><circle cx="13" cy="5" r="3"/><circle cx="21" cy="5" r="3"/><circle cx="27" cy="11" r="3"/></svg><span>buffy<span class="brand-dot">.</span></span></a>
+        <p>The AI commerce engine for consumer brands.</p>
+        <span class="sticker">occasional dog photos</span>
+      </div>
+      <div><h2>Explore</h2><a href="/">Field notes</a><a href="/#articles">All articles</a><a href="https://heybuffy.com/search">Buffy Search</a><a href="https://heybuffy.com/intel">Buffy Intel</a></div>
+      <div><h2>Company</h2><a href="/about.html">About</a><a href="/editorial.html">Editorial policy</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a></div>
+      <div class="newsletter"><h2>Notes worth fetching</h2><p>AI-commerce ideas, practical research, and the occasional Buffy update.</p><form><label class="sr-only" for="footer-email">Email</label><input id="footer-email" type="email" placeholder="you@brand.com"><button type="submit" aria-label="Subscribe">→</button></form><small>No spam. Pinky paw promise.</small></div>
+    </div>
+    <div class="shell bfooter__bottom">© 2026 Buffy. Built for brands that want to show up.</div>
+  </footer>
+  <script src="/static/js/main.js?v=6" defer></script>
+  
+</body>
+</html>
