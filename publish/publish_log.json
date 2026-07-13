@@ -11,5 +11,18 @@
     "daily_budget": 30,
     "live_total": 5,
     "remaining": 54
+  },
+  {
+    "ts": "2026-07-13T16:03:45.171963+00:00",
+    "published": [
+      "/blog/profound-alternatives.html",
+      "/blog/buffy-intel-vs-profound.html",
+      "/blog/athena-ai-review.html",
+      "/blog/best-ai-visibility-tools.html",
+      "/blog/shopify-search-and-discovery-review.html"
+    ],
+    "daily_budget": 30,
+    "live_total": 10,
+    "remaining": 49
   }
 ]
