@@ -1,7 +1,8 @@
-# .github/workflows/drip.yml  (in the buffy-blog repo)
-# 7 uneven runs/day: release the next ramped batch of pages, ping IndexNow (Bing),
-# commit output/ + publish/. The commit's push triggers deploy.yml -> Pages.
-# No LLM / generation here — pages are generated up front and committed to staging/.
+# .github/workflows/drip.yml  (buffy-blog repo)
+# 7 uneven runs/day: release the next ramped batch, commit, deploy to Pages, ping IndexNow.
+# Deploy happens IN THIS workflow — a bot-token push does not trigger deploy.yml
+# (GitHub blocks that to prevent recursion), so we deploy directly here.
+# No LLM / generation in CI — pages are generated up front and committed to staging/.
 name: Drip publish
 on:
   schedule:
@@ -15,12 +16,17 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  pages: write
+  id-token: write
 concurrency:
   group: drip
   cancel-in-progress: false
 jobs:
   drip:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -36,3 +42,9 @@ jobs:
           git add output publish
           git diff --cached --quiet || git commit -m "drip: publish batch $(date -u +'%F %H:%M')"
           git push
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: output
+      - id: deployment
+        uses: actions/deploy-pages@v4
