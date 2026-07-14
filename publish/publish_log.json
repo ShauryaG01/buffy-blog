@@ -73,5 +73,17 @@
     "daily_budget": 30,
     "live_total": 27,
     "remaining": 32
+  },
+  {
+    "ts": "2026-07-14T09:19:36.452679+00:00",
+    "published": [
+      "/blog/doofinder-vs-findify.html",
+      "/blog/fast-simon-vs-searchspring.html",
+      "/blog/surfer-seo-alternatives.html",
+      "/blog/fast-simon-alternatives-shopify.html"
+    ],
+    "daily_budget": 30,
+    "live_total": 31,
+    "remaining": 28
   }
 ]
