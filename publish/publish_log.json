@@ -109,5 +109,17 @@
     "daily_budget": 30,
     "live_total": 39,
     "remaining": 20
+  },
+  {
+    "ts": "2026-07-14T17:32:15.308160+00:00",
+    "published": [
+      "/blog/athena-ai-alternatives.html",
+      "/blog/boost-ai-search-review.html",
+      "/blog/searchspring-review.html",
+      "/blog/klevu-vs-algolia.html"
+    ],
+    "daily_budget": 30,
+    "live_total": 43,
+    "remaining": 16
   }
 ]
