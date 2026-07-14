@@ -1,10 +1,6 @@
 {
   "launch_date": "2026-07-13",
   "queue": [
-    "writesonic-alternatives.html",
-    "semrush-ai-alternatives.html",
-    "fast-simon-review.html",
-    "findify-review.html",
     "klevu-vs-boost-ai-search.html",
     "klevu-vs-searchspring.html",
     "searchanise-vs-algolia.html",
@@ -61,6 +57,10 @@
     "klevu-alternatives.html",
     "buffy-search-vs-klevu.html",
     "algolia-shopify.html",
-    "searchanise-alternatives.html"
+    "searchanise-alternatives.html",
+    "writesonic-alternatives.html",
+    "semrush-ai-alternatives.html",
+    "fast-simon-review.html",
+    "findify-review.html"
   ]
 }

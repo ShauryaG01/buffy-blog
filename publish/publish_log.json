@@ -48,5 +48,17 @@
     "daily_budget": 30,
     "live_total": 18,
     "remaining": 41
+  },
+  {
+    "ts": "2026-07-14T04:16:41.114657+00:00",
+    "published": [
+      "/blog/writesonic-alternatives.html",
+      "/blog/semrush-ai-alternatives.html",
+      "/blog/fast-simon-review.html",
+      "/blog/findify-review.html"
+    ],
+    "daily_budget": 30,
+    "live_total": 22,
+    "remaining": 37
   }
 ]
