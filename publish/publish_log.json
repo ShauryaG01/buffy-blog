@@ -121,5 +121,18 @@
     "daily_budget": 30,
     "live_total": 43,
     "remaining": 16
+  },
+  {
+    "ts": "2026-07-14T21:34:32.788096+00:00",
+    "published": [
+      "/blog/searchanise-vs-boost-ai-search.html",
+      "/blog/searchanise-vs-searchspring.html",
+      "/blog/boost-ai-search-vs-fast-simon.html",
+      "/blog/doofinder-vs-fast-simon.html",
+      "/blog/algolia-vs-searchspring.html"
+    ],
+    "daily_budget": 30,
+    "live_total": 48,
+    "remaining": 11
   }
 ]

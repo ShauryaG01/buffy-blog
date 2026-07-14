@@ -1,11 +1,6 @@
 {
   "launch_date": "2026-07-13",
   "queue": [
-    "searchanise-vs-boost-ai-search.html",
-    "searchanise-vs-searchspring.html",
-    "boost-ai-search-vs-fast-simon.html",
-    "doofinder-vs-fast-simon.html",
-    "algolia-vs-searchspring.html",
     "searchspring-vs-findify.html",
     "frase-alternatives.html",
     "semrush-ai-review.html",
@@ -61,6 +56,11 @@
     "athena-ai-alternatives.html",
     "boost-ai-search-review.html",
     "searchspring-review.html",
-    "klevu-vs-algolia.html"
+    "klevu-vs-algolia.html",
+    "searchanise-vs-boost-ai-search.html",
+    "searchanise-vs-searchspring.html",
+    "boost-ai-search-vs-fast-simon.html",
+    "doofinder-vs-fast-simon.html",
+    "algolia-vs-searchspring.html"
   ]
 }
