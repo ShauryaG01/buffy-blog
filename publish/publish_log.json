@@ -97,5 +97,17 @@
     "daily_budget": 30,
     "live_total": 35,
     "remaining": 24
+  },
+  {
+    "ts": "2026-07-14T15:07:55.649158+00:00",
+    "published": [
+      "/blog/boost-ai-search-vs-algolia.html",
+      "/blog/doofinder-vs-algolia.html",
+      "/blog/algolia-vs-fast-simon.html",
+      "/blog/fast-simon-vs-findify.html"
+    ],
+    "daily_budget": 30,
+    "live_total": 39,
+    "remaining": 20
   }
 ]
