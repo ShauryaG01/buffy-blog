@@ -85,5 +85,17 @@
     "daily_budget": 30,
     "live_total": 31,
     "remaining": 28
+  },
+  {
+    "ts": "2026-07-14T12:03:00.693554+00:00",
+    "published": [
+      "/blog/findify-alternatives-shopify.html",
+      "/blog/klevu-vs-doofinder.html",
+      "/blog/klevu-vs-findify.html",
+      "/blog/searchanise-vs-fast-simon.html"
+    ],
+    "daily_budget": 30,
+    "live_total": 35,
+    "remaining": 24
   }
 ]

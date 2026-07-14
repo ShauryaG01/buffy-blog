@@ -1,10 +1,6 @@
 {
   "launch_date": "2026-07-13",
   "queue": [
-    "findify-alternatives-shopify.html",
-    "klevu-vs-doofinder.html",
-    "klevu-vs-findify.html",
-    "searchanise-vs-fast-simon.html",
     "boost-ai-search-vs-algolia.html",
     "doofinder-vs-algolia.html",
     "algolia-vs-fast-simon.html",
@@ -61,6 +57,10 @@
     "doofinder-vs-findify.html",
     "fast-simon-vs-searchspring.html",
     "surfer-seo-alternatives.html",
-    "fast-simon-alternatives-shopify.html"
+    "fast-simon-alternatives-shopify.html",
+    "findify-alternatives-shopify.html",
+    "klevu-vs-doofinder.html",
+    "klevu-vs-findify.html",
+    "searchanise-vs-fast-simon.html"
   ]
 }
