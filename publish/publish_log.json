@@ -60,5 +60,18 @@
     "daily_budget": 30,
     "live_total": 22,
     "remaining": 37
+  },
+  {
+    "ts": "2026-07-14T06:57:41.550356+00:00",
+    "published": [
+      "/blog/klevu-vs-boost-ai-search.html",
+      "/blog/klevu-vs-searchspring.html",
+      "/blog/searchanise-vs-algolia.html",
+      "/blog/boost-ai-search-vs-doofinder.html",
+      "/blog/boost-ai-search-vs-findify.html"
+    ],
+    "daily_budget": 30,
+    "live_total": 27,
+    "remaining": 32
   }
 ]
