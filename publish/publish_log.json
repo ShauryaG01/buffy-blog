@@ -158,5 +158,16 @@
     "daily_budget": 30,
     "live_total": 56,
     "remaining": 3
+  },
+  {
+    "ts": "2026-07-15T09:24:14.523640+00:00",
+    "published": [
+      "/blog/boost-ai-search-vs-searchspring.html",
+      "/blog/doofinder-vs-searchspring.html",
+      "/blog/algolia-vs-findify.html"
+    ],
+    "daily_budget": 30,
+    "live_total": 59,
+    "remaining": 0
   }
 ]

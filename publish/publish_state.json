@@ -1,10 +1,6 @@
 {
   "launch_date": "2026-07-13",
-  "queue": [
-    "boost-ai-search-vs-searchspring.html",
-    "doofinder-vs-searchspring.html",
-    "algolia-vs-findify.html"
-  ],
+  "queue": [],
   "published": [
     "frase-review.html",
     "profound-vs-peec-vs-otterly.html",
@@ -61,6 +57,9 @@
     "searchspring-alternatives-shopify.html",
     "klevu-vs-fast-simon.html",
     "searchanise-vs-doofinder.html",
-    "searchanise-vs-findify.html"
+    "searchanise-vs-findify.html",
+    "boost-ai-search-vs-searchspring.html",
+    "doofinder-vs-searchspring.html",
+    "algolia-vs-findify.html"
   ]
 }
