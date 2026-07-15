@@ -146,5 +146,17 @@
     "daily_budget": 30,
     "live_total": 52,
     "remaining": 7
+  },
+  {
+    "ts": "2026-07-15T07:00:16.153876+00:00",
+    "published": [
+      "/blog/searchspring-alternatives-shopify.html",
+      "/blog/klevu-vs-fast-simon.html",
+      "/blog/searchanise-vs-doofinder.html",
+      "/blog/searchanise-vs-findify.html"
+    ],
+    "daily_budget": 30,
+    "live_total": 56,
+    "remaining": 3
   }
 ]
