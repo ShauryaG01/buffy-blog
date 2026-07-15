@@ -134,5 +134,17 @@
     "daily_budget": 30,
     "live_total": 48,
     "remaining": 11
+  },
+  {
+    "ts": "2026-07-15T04:16:02.814984+00:00",
+    "published": [
+      "/blog/searchspring-vs-findify.html",
+      "/blog/frase-alternatives.html",
+      "/blog/semrush-ai-review.html",
+      "/blog/boost-ai-search-alternatives-shopify.html"
+    ],
+    "daily_budget": 30,
+    "live_total": 52,
+    "remaining": 7
   }
 ]

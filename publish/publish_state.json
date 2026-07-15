@@ -1,10 +1,6 @@
 {
   "launch_date": "2026-07-13",
   "queue": [
-    "searchspring-vs-findify.html",
-    "frase-alternatives.html",
-    "semrush-ai-review.html",
-    "boost-ai-search-alternatives-shopify.html",
     "searchspring-alternatives-shopify.html",
     "klevu-vs-fast-simon.html",
     "searchanise-vs-doofinder.html",
@@ -61,6 +57,10 @@
     "searchanise-vs-searchspring.html",
     "boost-ai-search-vs-fast-simon.html",
     "doofinder-vs-fast-simon.html",
-    "algolia-vs-searchspring.html"
+    "algolia-vs-searchspring.html",
+    "searchspring-vs-findify.html",
+    "frase-alternatives.html",
+    "semrush-ai-review.html",
+    "boost-ai-search-alternatives-shopify.html"
   ]
 }
