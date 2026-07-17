@@ -281,5 +281,12 @@
     "daily_budget": 30,
     "live_total": 59,
     "remaining": 0
+  },
+  {
+    "ts": "2026-07-17T17:21:24.953168+00:00",
+    "published": [],
+    "daily_budget": 30,
+    "live_total": 59,
+    "remaining": 0
   }
 ]
